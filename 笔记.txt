@@ -1,0 +1,30 @@
+var +  变量名（比如：var num=100,var str='100',var bool=true）
+var obj = new object();
+obj.f=100;
+var obj1 = {};
+var obj1={
+name:'liu',
+age:100,
+address:'baoding'
+};
+console.log(obj.f);
+var arr = new Array();
+var arr=[];
+
+
+
+包装对象
+var year= now.tolacaleString();
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1-8（二）</title>
+	<style type="text/css">
+		#a{
+			background:#ccc;
+			height:620px;
+			text-align:center;
+		}
+		#b{
+			margin-left:30px;
+			margin-right:20px;
+			float:left;
+		}
+		.n{
+			float:left;
+			width:220px;
+			height:300px;
+			background:white;
+			margin-top:20px;
+			margin-right:16px;
+		}
+		.l{
+			float:left;
+			width:220px;
+			height:300px;
+			background:white;
+			margin-top:20px;
+			margin-right:16px;
+		}
+		.m{
+			display:none;
+			background:orange;
+			width:210px;
+			height:50px;
+			margin-bottom:0px;
+			position:relative;
+			bottom:40px;
+		}
+		.l img{
+			width:220px;
+			height:140px;
+			display:block;
+		}
+		.z
+		{
+			display:block;
+			background:orange;
+			width:220px;
+			height:60px;
+			margin-bottom:0px;
+			position:relative;
+			bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="a">
+		<img src="0.jpg" id="b"/>
+		<div class="n">
+			<img src="1.jpg"/></br>
+			小米电视A4
+			<p class="m">很好，画面超级好，很满意，物美价廉。</p>
+		</div>
+		<div class="n">
+			<img src="2.png"/></br>
+			小米电视A4
+			<p class="m">很好，画面超级好，很满意，物美价廉。</p>
+		</div>
+        <div class="n">
+        	<img src="3.jpg"/></br>
+        	小米电视A4
+        	<p class="m">很好，画面超级好，很满意，物美价廉。</p>
+        </div>
+        <div class="n">
+        	<img src="4.jpg"/></br>
+        	小米电视A4
+        	<p class="m">很好，画面超级好，很满意，物美价廉。</p>
+        </div>
+        <div class="n">
+        	<img src="5.jpg"/></br>
+        	小米电视A4
+        	<p class="m">很好，画面超级好，很满意，物美价廉。</p>
+        </div>
+        <div class="n">
+        	<img src="6.jpg"/></br>
+        	小米电视A4
+        </div>
+        <div class="n">
+        	<img src="7.jpg"/></br>
+        	小米电视A4
+        	<p class="m">很好，画面超级好，很满意，物美价廉。</p>
+        </div>
+        <div class="l">
+        	<img src="8.png"/></br>
+        	<img src="9.png"/></br>
+        </div>
+	</div>
+			<script type="text/javascript">
+			var boxes=document.getElementsByClassName("n");
+			for(var i=0;i<boxes.length;i++){
+				boxes[i].onmouseover=function(){
+					console.log(this.children[2].className);
+					this.children[2].className="z";
+
+				}
+				boxes[i].onmouseout=function(){
+					this.children[2].className="m";
+					
+				}
+			}
+		
+	</script>
+</body>
+</html>
